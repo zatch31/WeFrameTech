@@ -1,0 +1,888 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.block {
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* fonts */
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* breadcrumbs */
+
+.bredacrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  gap: 5px;
+  padding: 20px 0px;
+  color: black;
+}
+
+/* product sections */
+.product-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.product-left-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-height: 500px;
+  height: auto;
+  flex: 1;
+}
+
+.product-image-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  max-height: 400px;
+  width: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 10px;
+}
+
+.product-image-items::-webkit-scrollbar {
+  display: none;
+}
+
+.product-image-items img {
+  width: 100%;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.product-image-items img:hover {
+  box-shadow: 1px 0px 20px 4px #00000049;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  padding: 10px;
+  aspect-ratio: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.active-image {
+  border: 1px blue solid;
+}
+
+.product-right-section {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-heading {
+  gap: 10px;
+}
+
+.price {
+  color: rgb(92, 90, 90);
+  gap: 2px;
+  font-size: medium;
+}
+
+.price span {
+  color: black;
+  font-size: large;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-actions {
+  gap: 25px;
+  padding: 20px;
+}
+
+.action-button {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 132, 255);
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.counter {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.minus {
+  width: 20%;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.plus {
+  width: 20%;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.minus:hover,
+.plus:hover {
+  background: #00000052;
+  border-radius: 5px;
+}
+
+/* slider */
+
+.slider-section {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slider-section-title a {
+  text-decoration: underline;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.splide__arrow {
+  background: rgb(0, 132, 255) !important;
+}
+
+.splide__arrow svg {
+  fill: #fff !important;
+}
+
+.product-card {
+  width: 100%;
+  height: auto;
+}
+
+.product-card-image-wrapper {
+  aspect-ratio: 1;
+  height: auto;
+  width: 100%;
+  background: bisque;
+}
+
+.product-card-image-wrapper img {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.whishlist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.whishlist p {
+  font-size: 15px;
+}
+
+.product-card-info {
+  margin-top: 5px;
+}
+
+.product-card-info-heading {
+  gap: 10px;
+}
+
+.product-card-info-more {
+  font-size: 12px;
+}
+
+.product-card-info-more span {
+  padding: 0px 5px;
+  background-color: bisque;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+.fist-col {
+  gap: 5px;
+}
+
+/* midea query */
+
+@media screen and (max-width: 800px) {
+  .product-section {
+    flex-direction: column;
+  }
+
+  .product-left-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 100%;
+    height: auto;
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .product-left-section {
+    flex-direction: column-reverse;
+  }
+
+  .product-image-items {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .product-image-items img {
+    width: 80px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    min-height: auto;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-actions {
+    padding: 0;
+    gap: 10px;
+  }
+
+  footer {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Navbar */
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+  /* Light grey background */
+  border-bottom: 2px solid #00a2e8;
+  /* Blue border */
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: white;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  width: 200px;
+  /* Default width */
+}
+
+.search-bar:focus-within {
+  width: 300px;
+  /* Expands on focus */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adds shadow effect */
+}
+
+.search-bar input {
+  border: none;
+  padding: 0.5rem 1rem;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+  transition: width 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.search-bar button {
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 18px;
+  padding: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  /* Remove unwanted spacing */
+}
+
+.search-bar button:hover {
+  color: #007bff;
+  /* Highlight blue on hover */
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Navbar Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.nav-actions .btn {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-actions .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Custom Logo Styling */
+.custom-logo {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline;
+  line-height: 1;
+  color: black;
+}
+
+.custom-logo .text-black {
+  color: black;
+}
+
+.custom-logo .text-blue {
+  color: #00a2e8;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+  min-width: 150px;
+  /* Ensures consistent width for smaller screens */
+}
+
+.footer-logo {
+  max-width: 100px;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+}
+
+.footer-section ul li a:hover {
+  color: #0073e6;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  /* Space between social media icons */
+  align-items: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;/
+}
+
+.social-icons a:hover {
+  color: #0073e6;
+}
+
+.social-icons img {
+  max-width: 20px;
+  height: auto;
+}
+/* Social Media Icons Styling */
+.social-icons {
+  display: flex;
+  gap: 10px; /* Spacing between icons */
+  margin-top: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #555; /* Default icon color */
+  font-size: 20px; /* Icon size */
+}
+
+.social-icons a:hover {
+  color: #0073e6; /* Hover color */
+}
+
+/* General Styling for the Section */
+.info-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.info-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.info-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-container .highlight {
+  color: #00aaff;
+  /* Highlight color */
+}
+
+.info-container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.info-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.info-item img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.info-item h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Subscribe Section Styles */
+.subscribe-section {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fce8ff; /* Light pink background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Ensures image respects rounded corners */
+  gap: 20px;
+}
+
+/* Image Section */
+.subscribe-image {
+  flex: 1;
+  max-width: 50%; /* Adjust image size */
+}
+.subscribe-image svg {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.subscribe-image svg:hover {
+  transform: scale(1.05); /* Slight zoom-in effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Content Section */
+.subscribe-content {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.subscribe-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subscribe-content h3 .highlight {
+  color: #0073e6; /* Highlight in blue */
+}
+
+.subscribe-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.subscribe-form button {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .subscribe-container {
+      flex-direction: column; /* Stack image and content vertically */
+      text-align: center;
+  }
+  .subscribe-image {
+      max-width: 100%;
+  }
+  .subscribe-content {
+      padding: 10px;
+  }
+  .subscribe-form {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+/* Icon Styling */
+.info-item i {
+  font-size: 30px; /* Icon size */
+  color: #00aaff; /* Icon color */
+  margin-bottom: 10px;
+}
+
+/* Keyframe for Up and Down animation */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Sofa Base Animation */
+.sofa {
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+/* Sofa Cushions Animation */
+.cushion {
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+/* Apply animation to individual cushions with a delay */
+.red-cushion {
+  animation-delay: 0s; /* No delay */
+}
+
+.blue-cushion {
+  animation-delay: 0.1s; /* Slight delay for effect */
+}
+
+.green-cushion {
+  animation-delay: 0.2s; /* Slight delay for effect */
+}
+
+/* Backrest Animation */
+.backrest {
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+/* Pillows Animation */
+.pillow {
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+/* Shadow Animation */
+.sofa-shadow {
+  animation: moveUpDown 3s ease-in-out infinite;
+}

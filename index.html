@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeFormTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="custom-logo">
+                    <span class="text-black">We</span>
+                    <span class="text-blue">Form</span>
+                    <span class="text-black">Tech</span>
+                </span>
+            </div>
+            <form class="search-bar">
+                <button type="submit" class="search-icon">🔍</button>
+                <input type="text" placeholder="Rechercher..." />
+            </form>
+            <ul class="nav-links">
+                <li><a href="#">Art de la Table</a></li>
+                <li><a href="#">Mobilier</a></li>
+                <li><a href="#">Nappage</a></li>
+                <li><a href="#">Matériel de Salle</a></li>
+                <li><a href="#">Cuisine</a></li>
+                <li><a href="#">Barbecue</a></li>
+                <li><a href="#">Chauffage</a></li>
+                <li><a href="#">Podium - Piste de danse</a></li>
+                <li><a href="#">Son et Lumière</a></li>
+                <li><a href="#">Packs</a></li>
+                <li><a href="#">Consommables</a></li>
+            </ul>
+            <div class="nav-actions">
+
+                <button class="btn panier">Panier</button>
+                <div class="lang-select">
+                    <!-- <select>
+                        <option value="fr">FR</option>
+                        <option value="en">EN</option>
+                    </select> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="block">
+        <!-- bredacrumbs -->
+        <div class="breadcrumbs flex poppins-regular">
+            <p> <a href="/" class="poppins-semibold">Accueil</a> > L'Art du Produit</p>
+        </div>
+        <!-- product sections -->
+        <div class="flex product-section">
+            <!-- product left  sections-->
+            <div class="product-left-section">
+                <div class="product-image-items">
+                    <img src="images/p1.png" alt="" class="active-image" onclick="activeImage(this)">
+                    <img src="images/p1.png" alt="" onclick="activeImage(this)">
+                    <img src="images/p1.png" alt="" onclick="activeImage(this)">
+                    <img src="images/p1.png" alt="" onclick="activeImage(this)">
+                    <img src="images/p1.png" alt="" onclick="activeImage(this)">
+                    <img src="images/p1.png" alt="" onclick="activeImage(this)">
+                    <img src="images/p1.png" alt="" onclick="activeImage(this)">
+                    <img src="images/p1.png" alt="" onclick="activeImage(this)">
+                    <img src="images/p1.png" alt="" onclick="activeImage(this)">
+                </div>
+                <div class="product-image ">
+                    <img src="images/p1.png" alt="" id="active-image">
+                </div>
+            </div>
+            <!-- product-right-section" -->
+            <div class="product-right-section poppins-semibold">
+                <!-- product-heading -->
+                <div class="flex items-center justify-between product-heading">
+                    <h2>Nom du Produit</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-heart">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                </div>
+                <!-- product price -->
+                <p class="poppins-regular price flex items-center"><span class="poppins-semibold">20.30€</span>/piece
+                </p>
+                <!-- desc -->
+                <div class="product-description ">
+                    <p>Description</p>
+                    <p class="poppins-regular"> Cette bougie artisanale dégage une senteur subtile et apaisante, idéale
+                        pour créer une atmosphère chaleureuse et relaxante dans votre maison. Fabriquée à partir de
+                        matériaux naturels, elle est conçue pour offrir une expérience sensorielle exceptionnelle.
+                    </p>
+                    </p>
+                </div>
+                <!-- actions -->
+                <div class="product-actions flex items-center">
+                    <div class="flex counter">
+                        <p class="minus" id="minus" onclick="counterMinus()">-</p>
+                        <p class="count" id="count">1</p>
+                        <p class="plus" id="plus" onclick="counterPlus()">+</p>
+                    </div>
+                    <Button class="action-button poppins-semibold">Ajouter au panier</Button>
+                </div>
+            </div>
+        </div>
+
+        <!-- slider -->
+        <div class="slider-section">
+            <div class="flex items-center justify-between slider-section-Titre">
+                <h2 class="poppins-semibold">Articles similaires</h2>
+                <a href="" class="poppins-regular">Voir plus</a>
+            </div>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- slider -->
+        <div class="slider-section">
+            <div class="flex items-center justify-between slider-section-Titre">
+                <h2 class="poppins-semibold">Articles similaires</h2>
+                <a href="" class="poppins-regular">Voir plus</a>
+            </div>
+            <section class="splide" id="second-slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-start justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product-card">
+                                <div class="product-card-image-wrapper">
+                                    <img src="images/p1.png" alt="">
+                                    <div class="whishlist flex items-center justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <p class="poppins-regular">Table d'art</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-info">
+                                    <div
+                                        class="flex items-center justify-between poppins-medium product-card-info-heading">
+                                        <h4>Titre</h4>
+                                        <p>0€</p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-between poppins-regular product-card-info-more">
+                                        <p>Titre</p>
+                                        <span>20 Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <section class="info-section">
+        <div class="info-container">
+            <h2>On s'occupe de <span class="highlight">tout</span></h2>
+            <p>Office lorem you must be trusted it. Meeting commitment busy path.</p>
+            <div class="info-items">
+                <div class="info-item">
+                    <i class="fas fa-truck"></i>
+                    <h4>Livraison & Reprise</h4>
+                    <p>Selon vos besoins</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-broom"></i>
+                    <h4>Nettoyage</h4>
+                    <p>Selon vos besoins</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-infinity"></i>
+                    <h4>Commande Illimitée</h4>
+                    <p>Tout est possible</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Transport & Enlèvement</h4>
+                    <p>On s'occupe de tout</p>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-section">
+            <div class="subscribe-container">
+                <!-- Left Side: SVG Sofa -->
+                <div class="subscribe-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150" fill="none"
+                        class="sofa">
+                        <!-- Sofa Base with Gradient for 3D effect -->
+                        <rect x="10" y="80" width="280" height="40" rx="20" ry="20" fill="url(#baseGradient)"
+                            stroke="#666" stroke-width="2" class="sofa-base" />
+
+                        <!-- Sofa Cushions with Colors -->
+                        <rect x="20" y="90" width="80" height="30" rx="10" ry="10" fill="url(#redGradient)"
+                            class="cushion red-cushion" />
+                        <rect x="110" y="90" width="80" height="30" rx="10" ry="10" fill="url(#blueGradient)"
+                            class="cushion blue-cushion" />
+                        <rect x="200" y="90" width="80" height="30" rx="10" ry="10" fill="url(#greenGradient)"
+                            class="cushion green-cushion" />
+
+                        <!-- Backrest with Gradient -->
+                        <rect x="10" y="40" width="280" height="40" rx="20" ry="20" fill="url(#backrestGradient)"
+                            class="backrest" />
+
+                        <!-- Sofa Legs -->
+                        <rect x="30" y="120" width="20" height="20" fill="#2D2D2D" />
+                        <rect x="250" y="120" width="20" height="20" fill="#2D2D2D" />
+
+                        <!-- Decorative Pillows -->
+                        <circle cx="60" cy="40" r="12" fill="url(#pinkGradient)" class="pillow pink-pillow" />
+                        <circle cx="240" cy="40" r="12" fill="url(#yellowGradient)" class="pillow yellow-pillow" />
+
+                        <!-- Shadow Effect for Depth -->
+                        <ellipse cx="150" cy="135" rx="120" ry="15" fill="rgba(0, 0, 0, 0.2)" class="sofa-shadow" />
+
+                        <!-- Gradients Definitions -->
+                        <defs>
+                            <!-- Gradient for the sofa base -->
+                            <linearGradient id="baseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F16B6C;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D74B4C;stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Gradient for Red Cushion -->
+                            <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF5F5F;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D33B3B;stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Gradient for Blue Cushion -->
+                            <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3E7BFF;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#2959B4;stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Gradient for Green Cushion -->
+                            <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#68D3A5;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#4C9F75;stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Gradient for Backrest -->
+                            <linearGradient id="backrestGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8C7FF7;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#4E4CFF;stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Gradient for Pink Pillow -->
+                            <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF80B5;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D85F95;stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Gradient for Yellow Pillow -->
+                            <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFEE4B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D1B12B;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </div>
+
+                <!-- Right Side: Content Section -->
+                <div class="subscribe-content">
+                    <h3>S'inscrire & économiser <span class="highlight">10%</span></h3>
+                    <p>
+                        Text busy any meeting blank light margin-based 4-blocker message.
+                        Productize corporate nail caught synergy highlights launch.
+                    </p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="john@doe.com" required>
+                        <button type="submit">S'INSCRIRE →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <span class="custom-logo">
+                    <span class="text-black">We</span>
+                    <span class="text-blue">Form</span>
+                    <span class="text-black">Tech</span>
+                </span>
+            </div>
+            <div class="footer-section">
+                <h4>INFOS PRATIQUES</h4>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Livraisons & Retours</a></li>
+                    <li><a href="#">Mode d'emploi</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>LÉGAL</h4>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">CGU</a></li>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>MON COMPTE</h4>
+                <ul>
+                    <li><a href="#">Accéder à mon compte</a></li>
+                    <li><a href="#">Ma liste d'envies</a></li>
+                    <li><a href="#">Créer un compte</a></li>
+                    <li><a href="#">Mot de passe oublié</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>NOUS SUIVRE</h4>
+                <div class="social-icons">
+                    <a href="https://twitter.com" target="_blank" Titre="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" Titre="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" Titre="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
